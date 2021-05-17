@@ -31,5 +31,6 @@ defmodule Rockelivery.Order do
     |> put_assoc(:items, items)
     |> validate_length(:address, min: 10)
     |> validate_length(:comments, min: 6)
+    |> foreign_key_constraint(:user_id)
   end
 end
