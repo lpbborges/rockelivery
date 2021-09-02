@@ -2,8 +2,8 @@ use Mix.Config
 
 # Configure your database
 config :rockelivery, Rockelivery.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "docker",
+  password: "ignite",
   database: "rockelivery_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
