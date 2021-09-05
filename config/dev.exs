@@ -10,7 +10,7 @@ config :rockelivery, Rockelivery.Repo,
   pool_size: 10
 
 if System.get_env("GITHUB_ACTIONS") do
-  config :rockelivery, Rockelivery.Repo,
+  config :rockelivery, Rockelivery.Repo
     username: "postgres"
     password: "postgres"
 end
